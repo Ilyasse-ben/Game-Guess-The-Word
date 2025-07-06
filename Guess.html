@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Guess.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Guess The Word</title>
+</head>
+<body class="affiche-none bg-black">
+    <div class=" w-3/4 text-center mx-auto mt-20 flex flex-col bg-slate-300 ">
+        <div  id="title" class="bg-slate-100 text-4xl font-sans font-bold align">
+            <h1> Guess The Word</h1>
+        </div>
+        <div class="grid grid-cols-20 gap-1 h-2 my-1">
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+            <div class="level"></div>
+        </div>
+        <div class="flex justify-center mt-4">
+            <div id="des" class="w-60 h-10 bg-slate-100 mr-8 text-black text-sm">
+
+            </div>
+            <div id="let" class="w-44 h-10 bg-slate-50  ml-8 text-black">
+
+            </div>
+        </div>
+        <div id="body" class="bg-slate-300 grid grid-cols-2">
+            <div id="Geme" class="mt-5">
+                <div class="m-3"> 
+                   <span> try1 </span>
+                        <input type="text" name="0"  id="0" maxlength="1"  oninput="avancerSuivant(event, '1')"  class="w-9 h-9 ml-1 bg-slate-50 inp p-2 text-2xl">
+                        <input type="text" name="1" id="1" oninput="avancerSuivant(event, '2')"  oninput="avancerSuivant(event, 'lettre3')" type="text" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="2" id="2" oninput="avancerSuivant(event, '3')"  maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="3" id="3" oninput="avancerSuivant(event, '4')"  maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="4" id="4" oninput="avancerSuivant(event, 'non')"   maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                       
+                </div>
+                <div class="m-3">
+                    <span> try2 </span>
+                        <input type="text" name="0" id="5" oninput="avancerSuivant(event, '6')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="1" id="6" oninput="avancerSuivant(event, '7')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="2" id="7" oninput="avancerSuivant(event, '8')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="3" id="8" oninput="avancerSuivant(event, '9')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="4" id="9" oninput="avancerSuivant(event, 'non')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                       
+                </div>
+                <div class="m-3">
+                    <span> try3 </span>
+                        <input type="text" name="0" id="10" oninput="avancerSuivant(event, '11')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="1" id="11" oninput="avancerSuivant(event, '12')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="2" id="12" oninput="avancerSuivant(event, '13')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="3" id="13" oninput="avancerSuivant(event, '14')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="4" id="14" oninput="avancerSuivant(event, 'non')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        
+                </div>
+                <div class="m-3">
+                    <span> try4 </span>
+                        <input type="text" name="0" id="15" oninput="avancerSuivant(event, '16')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="1" id="16" oninput="avancerSuivant(event, '17')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="2" id="17" oninput="avancerSuivant(event, '18')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="3" id="18" oninput="avancerSuivant(event, '19')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                        <input type="text" name="4" id="19" oninput="avancerSuivant(event, 'non')" maxlength="1" class="w-9 h-9 ml-1 bg-slate-50 p-2 text-2xl">
+                       
+                </div>
+                
+                <div>
+                    <input  type="button" value="Check Word" class="w-32 bg-orange-400 rounded-md">
+                    <input  id="hint" type="button" value="4 Hint" class="w-16 bg-green-300 rounded-md mt-5 mb-10">
+                </div>
+
+            </div>
+            <div id="Key" class="m-16">
+                <h1> Key Colors</h1>
+                <div class="flex flex-col ">
+                    <div class="pl-0 m-2 bg-white">
+                        <button class="w-4 h-4 inline bg-emerald-300 whitespace-normal"></button>
+                        Letter is Right And in Place
+                    </div>
+                    <div class="p m-2 bg-white">
+                        <button class="w-4 h-4 inline bg-yellow-200 "></button>
+                        Letter is Right And Not in Place
+                    </div>
+                    <div class="p m-2 bg-white">
+                        <button class="w-4 h-4 inline bg-red-400 "></button>
+                        Letter is Wrong And Not Existe in Word
+                    </div>
+                    <div class="w-30 h-8 bg-white ml-20 mt-10 text-black" id="afficher">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Guess.js"></script>
+</body>
+</html>
